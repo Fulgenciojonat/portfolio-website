@@ -53,12 +53,14 @@ body {
 }
 
 .me{
-	height: 200px; /*height sets the height of an element */
-	width: 200px; 
+/*	height: 200px; height sets the height of an element 
+	width: 200px;*/
 	border-radius: 50%;
 	border-style: solid;
 	border-width: 5px;
 	border-color: white;
+	margin: auto;
+/*	margin-left: auto;*/
 
 	
 	
