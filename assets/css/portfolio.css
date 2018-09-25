@@ -3,6 +3,7 @@
 	margin: 0;
 	padding: 0;
 
+
 }
 
 
@@ -121,7 +122,7 @@ body {
 
 .main-lead {
 
-	color: #A9AEB8;
+	color: #14213D;
 	font-size: 16px;
 
 	
@@ -161,7 +162,7 @@ body {
 }
 
 .bubble{
-    background-color: #F2F2F2;
+    background-color: #A9AEB8;
     border-radius: 5px;
     box-shadow: 0 0 6px #B2B2B2;
     display: inline-block;
@@ -171,7 +172,7 @@ body {
 }
 
 .bubble::before {
-    background-color: #F2F2F2;
+    background-color: #A9AEB8;
     content: "\00a0";
     display: block;
     height: 16px;
@@ -359,6 +360,23 @@ body {
 
 .container-fluid {
 	overflow: hidden;
+}
+
+.nav-link{
+	color: #696969;
+	font-family: 'Roboto', sans-serif;
+
+}
+
+.nav-link:hover{
+	color: black;
+	font-family: 'Roboto', sans-serif;
+
+}
+
+
+.links {
+	background-color: #E5E5E5;
 }
 
 
