@@ -122,8 +122,11 @@ body {
 
 .main-lead {
 
-	color: #14213D;
+	
 	font-size: 16px;
+	padding-left:50px;
+	padding-right:50px;
+	
 
 	
 }
@@ -141,7 +144,7 @@ body {
 
 .fab {
 
-	color: #A9AEB8;
+	color: #E8E8E8;
 	font-size: 50px;
 	margin: 10px 10px;
 
@@ -152,9 +155,10 @@ body {
 }
 
 .main {
-	background-color: #14213D;
-	padding: 50px 20px;
-	color: #A9AEB8;
+	background-image: url(../image/top_bg.jpg);
+	background-size: cover;
+    background-position: center center;
+	color: #E8E8E8;
 	/*background-size: cover;
     background-position: center center;*/
 	
@@ -219,7 +223,7 @@ body {
   font-family: 'Permanent Marker', cursive;
   text-align: center;
   letter-spacing: 10px;
-  color: #A9AEB8;
+  color: #E8E8E8;
 }
 
 
@@ -280,7 +284,7 @@ body {
 	height: 300px;
 	border-style: solid;
 	border-width: 10px;
-	border-color: #545D71;
+	border-color: #E8E8E8;
 	border-radius: 50%;
 	background-image: url(../image/jonathan.jpg);
 	background-size: cover;
@@ -326,6 +330,11 @@ body {
 	padding: 20px;
 }
 
+.main-bg {
+	background-color: rgba(128, 128, 128, 0.5);
+	padding: 20px;
+}
+
 
 .padding-bar {
 	padding-left: 50px;
@@ -335,10 +344,11 @@ body {
 
 .capstone-content {
 	
-	background-image: url(../image/BG.jpg);
+	background-image: url(../image/main_bg.jpg);
 	background-size: cover;
     background-position: center center;
     background-size: no-repeat;
+    background-attachment: fixed;
     padding: 0px;
     margin-top: 0px;
 
