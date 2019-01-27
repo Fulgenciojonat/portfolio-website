@@ -373,21 +373,26 @@ body {
 }
 
 .nav-link{
-	color: #696969;
+	color: white;
 	font-family: 'Roboto', sans-serif;
 
 }
 
 .nav-link:hover{
-	color: black;
+	color: white;
 	font-family: 'Roboto', sans-serif;
+	text-decoration: underline;
 
 }
 
+#download{
+	color: white;
+}
 
-.links {
+
+/*.links {
 	background-color: #E5E5E5;
-}
+}*/
 
 
 
