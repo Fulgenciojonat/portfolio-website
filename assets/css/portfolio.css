@@ -124,8 +124,14 @@ body {
 
 	
 	font-size: 16px;
-	padding-left:50px;
-	padding-right:50px;
+	padding-left:80px;
+	padding-right:80px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	width: 80%;
+	background-color: rgba(0, 0, 0, 0.5);
+	margin: auto;
+	border-radius: 20px;
 	
 
 	
