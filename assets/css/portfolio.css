@@ -12,16 +12,83 @@ body {
 	
 }
 
-.carousel {
-	width: 80%;
-	margin: auto;
+.maintitle{
+	font-weight: bold;
+	letter-spacing: 2px;
+	font-size: 2em;
+	margin-top: 10px;
+}
+.loader-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #242f3f;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.details {
+	width: 240px;
+	height: 50px;
+	margin: 30px auto 0;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 5px solid gray;
+	cursor: pointer;
+	font-weight: bold;
+	position: relative;
 }
 
 
+.details:hover {
+	background: white;
+	color: gray;
+	border: 5px solid gray;
+	
+}
 
-.carousel-item .active {
-	width: 80%;
-	margin: auto;
+.is-open {
+	transform: rotate(90deg);
+}
+
+.details > .icon {
+	position: absolute;
+	top: 20%;
+	right: 10%;
+}
+.loader {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  border: 4px solid #Fff;
+  animation: loader 2s infinite ease;
+}
+.loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: #fff;
+  animation: loader-inner 2s infinite ease-in;
+}
+@keyframes loader {
+  0% { transform: rotate(0deg);}
+  25% { transform: rotate(180deg);}
+  50% { transform: rotate(180deg);}
+  75% { transform: rotate(360deg);}
+  100% { transform: rotate(360deg);}
+}
+@keyframes loader-inner {
+  0% { height: 0%;}
+  25% { height: 0%;}
+  50% { height: 100%;}
+  75% { height: 100%;}
+  100% { height: 0%;}
 }
 
 .bottom {
@@ -118,6 +185,7 @@ body {
 	color: #A9AEB8;
 	font-size: 16px;
 	padding: 30px;
+	display: none;
 }
 
 .main-lead {
@@ -171,31 +239,7 @@ body {
 	
 }
 
-.bubble{
-    background-color: #A9AEB8;
-    border-radius: 5px;
-    box-shadow: 0 0 6px #B2B2B2;
-    display: inline-block;
-    padding: 10px 18px;
-    position: relative;
-    vertical-align: top;
-}
 
-.bubble::before {
-    background-color: #A9AEB8;
-    content: "\00a0";
-    display: block;
-    height: 16px;
-    position: absolute;
-    top: 11px;
-    transform:             rotate( 29deg ) skew( -35deg );
-        -moz-transform:    rotate( 29deg ) skew( -35deg );
-        -ms-transform:     rotate( 29deg ) skew( -35deg );
-        -o-transform:      rotate( 29deg ) skew( -35deg );
-        -webkit-transform: rotate( 29deg ) skew( -35deg );
-    width:  20px;
-
-}
 
 .me {
     float: left;   
@@ -207,11 +251,6 @@ body {
     box-shadow: -2px 2px 2px 0 rgba( 178, 178, 178, .4 );
     left: -9px;           
 }
-
-
-
-
-
 
 
 /* Featurettes
@@ -266,24 +305,6 @@ body {
 	font-family: 'Patua One', cursive;
 }
 
-
-@media only screen and (max-width: 400px) {
-	.rounded-circle {
-		height: 30%;
-		width: 30%;
-	}
-}
-
-
-/*Tablets*/
-@media only screen and (min-width: 401px) and (max-width: 960px){
-	.rounded-circle {
-		height: 50%;
-		width: 50%;	
-	}
-}
-
-
 .mainImage {
 
 	width: 300px;
@@ -296,9 +317,6 @@ body {
 	background-size: cover;
     background-position: center center;
     margin: auto;
-	
-
-	
 }
 
 .section-heading {
@@ -306,12 +324,22 @@ body {
 	letter-spacing: 5px;
 	color: white;
 	font-size: 5em;
-
 }
 
 .progress {
 	margin-top: 50px;
+}
 
+.progress > .progress-bar {
+	background: gray;
+}
+
+.skills {
+	width: auto;
+}
+
+.skills-php{
+	width: 133%;
 }
 
 
@@ -328,12 +356,15 @@ body {
     background-size: no-repeat;
     background-attachment: fixed;
     padding: 0px;
+}
 
+.skill-container {
+	width: 940px;
+	margin: auto;
 }
 
 .skill-bg {
 	background-color: rgba(120, 120, 120, 0.75);
-	padding: 20px;
 }
 
 .main-bg {
@@ -357,16 +388,14 @@ body {
     background-attachment: fixed;
     padding: 0px;
     margin-top: 0px;
-
-
 }
 
 .capstone {
 	background-color: rgba(0, 0, 0, 0.5);
 	padding: 20px;
 	margin-top: 10px;
-
-
+	width: 940px;
+	margin: 0 auto;
 }
 
 .bg {
@@ -396,10 +425,55 @@ body {
 }
 
 
-/*.links {
-	background-color: #E5E5E5;
-}*/
 
+@media only screen and (max-width: 750px) {
+	.rounded-circle {
+		height: 30%;
+		width: 30%;
+	}
+
+	.section-heading{
+		font-size: 10.667vw;
+	}
+
+	.skills-php{
+		width: auto;
+	}
+
+	.capstone {
+		width: auto;
+	}
+
+	.main-lead {
+		font-size: 2.133vw;
+		padding-left: 5vw;
+		padding-right: 5vw;
+	}
+	.mainImage{
+		width: 40vw;
+		height: 40vw;
+	}
+
+	.skill-container{
+		width: auto;
+	}
+	.featurette-heading{
+		font-size: 4.267vw;
+	}
+
+	.nav-link{
+		font-size: 2.533vw;
+	}
+}
+
+
+/*Tablets*/
+/*@media only screen and (min-width: 401px) and (max-width: 960px){
+	.rounded-circle {
+		height: 50%;
+		width: 50%;	
+	}
+}*/
 
 
 
