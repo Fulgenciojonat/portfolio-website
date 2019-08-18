@@ -12,6 +12,15 @@ body {
 	
 }
 
+.other {
+	color: white;
+}
+
+ul li a {
+	text-decoration: none;
+	color: white;
+}
+
 .maintitle{
 	font-weight: bold;
 	letter-spacing: 2px;
