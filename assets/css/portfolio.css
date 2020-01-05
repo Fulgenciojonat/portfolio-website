@@ -198,19 +198,15 @@ ul li a {
 }
 
 .main-lead {
-
-	
 	font-size: 16px;
 	padding-left:80px;
 	padding-right:80px;
 	padding-top: 30px;
 	padding-bottom: 30px;
-	width: 80%;
+	width: 50%;
 	background-color: rgba(0, 0, 0, 0.5);
 	margin: auto;
 	border-radius: 20px;
-	
-
 	
 }
 
@@ -271,16 +267,43 @@ ul li a {
 
 /* Thin out the marketing headings */
 .featurette-heading {
-  font-weight: 300;
+  font-weight: bolder;
   line-height: 2;
-  letter-spacing: -.05rem;
-  font-family: 'Permanent Marker', cursive;
   text-align: center;
-  letter-spacing: 10px;
-  color: #E8E8E8;
+  letter-spacing: 5px;
+  color: white;
+  font-size: 20px;
 }
 
+.name {
+	line-height: 1.2;
+	text-align: center;
+	letter-spacing: 5px;
+	color: #E8E8E8;
+	font-size: 100px;
+	width: 60%;
+	margin: 20px auto;
+	text-shadow: 1.5px 1.5px 3px black;
+}
 
+.name > span {
+	color: gray;
+	font-size: 40px;
+	text-shadow: 2px 2px 3px black;
+}
+
+.name > small {
+	color: white;
+	font-size: 20px;
+	display: block;
+	font-weight: bold;
+}
+
+.name .is-red {
+	color: #d02f3b;
+	font-size: 100px;
+	text-shadow: 2px 2px 3px black;
+}
 
 
 .text-muted {
@@ -431,6 +454,20 @@ ul li a {
 
 #download{
 	color: white;
+}
+
+.carousel-item > h5, p, ul {
+	color: white;
+}
+
+.carousel-item > h5 {
+	font-weight: bold;
+	text-align: center;
+}
+
+.carousel-item > ul {
+	display: flex;
+	justify-content: space-around;
 }
 
 
